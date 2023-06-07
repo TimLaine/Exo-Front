@@ -1,3 +1,22 @@
 *{
     font-family: verdana;
 }
+body{
+    background-color: rgb(255, 217, 0);
+}
+nav{
+    background-color: rgb(104, 104, 192);
+}
+.blanc{
+    color: white;
+}
+article{
+    width: 600px;
+    margin: 0, auto;
+    padding: 1em;
+    text-align: justify;
+    background-color: white;
+}
+footer{
+    background-color: rgb(104, 104, 192);
+}
