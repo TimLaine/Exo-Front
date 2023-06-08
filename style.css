@@ -2,15 +2,11 @@
     font-family: verdana;
     box-sizing: border-box;
     margin: 0;
+    vertical-align: top;
 }
 div{
     background-color: rgb(230, 196, 7);
-}
-.bleu{
-    background-color: rgb(104, 104, 192);
-}
-.blanc{
-    color: white;
+    padding : 0 12%;
 }
 h2{
     text-align: center;
@@ -18,40 +14,49 @@ h2{
 header{
     text-align: center;
     margin: 0 auto;
-    width: 80%;
+    
 }
 main{
     margin: 0;
-}
-article{
-    position: relative;
-    width: 80%;
-    padding: 1em;
-    margin: 0 auto;
-    text-align: justify;
+    display: flex;
     background-color: white;
 }
 nav{
     text-align: center;
+    margin: 3% 5px;
+    padding: 10px;
     width: 200px;
+    height: 150px;
 }
 ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+article{
+    padding: 1em;
+    margin: 0 auto;
+    text-align: justify;
+}
 aside{
-    position: relative;
+    text-align: center;
     align-items: center;
     font-size: smaller;
-    display: block;
+    margin: 5% 0;
     width: 200px;
+    height: 470px;
     padding: 1em;
 }
 footer{
-    width: 80%;
+    
     margin: 0 auto;
     text-align: center;
+}
+.bleu{
+    background-color: rgb(104, 104, 192);
+}
+.blanc{
+    color: white;
 }
 #jaune{
     color: rgb(230, 196, 7);
@@ -67,5 +72,21 @@ footer{
 #pinaise{
     font-weight: bold;
     font-size: x-large;
-    
+}
+@media screen and (max-width: 780px){
+    div{
+        padding: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+    nav{
+        height: 5%;
+        width: 100%;
+    }
+    aside{
+        margin: auto;
+    }
 }
